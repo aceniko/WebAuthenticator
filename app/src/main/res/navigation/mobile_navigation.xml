@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_authenticate">
+
+    <fragment
+        android:id="@+id/nav_activation"
+        android:name="com.web.authenticator.ui.activation.ActivationFragment"
+        android:label="@string/menu_activation"
+        tools:layout="@layout/fragment_activation"/>
+
+    <fragment
+        android:id="@+id/nav_authenticate"
+        android:name="com.web.authenticator.ui.authenticate.AuthenticateFragment"
+        android:label="@string/menu_authenticate"
+        tools:layout="@layout/fragment_authenticate"/>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.web.authenticator.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.web.authenticator.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.web.authenticator.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
